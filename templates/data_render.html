@@ -7,10 +7,14 @@
 </head>
 <body>
     <CENTER>
-        <h1>this is by using jinja tags</h1>
-    <h1>subbu is the {{ key }}</h1>
-    {% if age > 10 %}
-        <h1>subbu age is 🙌🙌 {{ age }}</h1>
+        <h1>this is by using jinja operational tags</h1>
+    
+    {% if a > b %}
+        <h1>a is bigger than b</h1>
+    {% elif a < b %}
+        <h1>b is bigger than a</h1>
+    {% else %}
+        <h1>a equal to b</h1>
     {% endif %}
     </CENTER>
     
