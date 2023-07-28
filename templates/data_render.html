@@ -10,11 +10,19 @@
         <h1>this is by using jinja operational tags</h1>
     
     {% if a > b %}
-        <h1>a is bigger than b</h1>
-    {% elif a < b %}
-        <h1>b is bigger than a</h1>
+        {% if a > c %}
+        <h1>a is bigger than b&c</h1>
+        {% else %}
+        <h1>c is bigger than a&c</h1>
+        {% endif %}
+
+
     {% else %}
-        <h1>a equal to b</h1>
+        {% if b > c %}
+        <h1>b is bigger than a&c </h1>
+        {% else %}
+        <h1>c is bigger than b&c</h1>
+        {% endif %}
     {% endif %}
     </CENTER>
     
